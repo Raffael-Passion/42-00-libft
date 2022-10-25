@@ -6,11 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:01:56 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 17:30:16 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/25 15:14:25 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int    ft_strlen(char *str)
+int     ft_strlen(char *str)
 {
     int i = 0;
     while (str[i] != '\0')

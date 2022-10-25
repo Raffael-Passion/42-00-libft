@@ -6,7 +6,19 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:32 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 14:51:43 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:22:28 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+void    *ft_memset(void *b, int c, size_t n)
+{
+    char *p;
+
+    p = (char *)b;
+    while (n > 0)
+    {
+        p[n - 1] == c;
+        n--;
+    }
+    return (b);
+}
