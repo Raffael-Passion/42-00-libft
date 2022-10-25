@@ -6,11 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:49:51 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/25 16:29:27 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:33:15 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void    ft_bzero(void *s, size_t n)
 {
-    ft_memset (s, 0, n);
+    ft_memset(s, 0, n);
 }
