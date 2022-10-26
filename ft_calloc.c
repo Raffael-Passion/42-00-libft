@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:49:54 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 16:41:33 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:37:57 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_calloc(size_t n, size_t size)
 {

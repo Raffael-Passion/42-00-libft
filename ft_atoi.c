@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:49:47 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 17:30:09 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:37:39 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int     ft_atoi(const char *str)            //atoi shall convert ascii string to integer
 {                                           //with const you can not modify the char which is pointed to

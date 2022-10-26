@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:15 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 17:28:55 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:38:52 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memchr(const void *s, int c, size_t n)
 {

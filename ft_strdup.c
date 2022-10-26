@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:40 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 15:51:43 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:39:50 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char    *ft_strdup(const char *s)
 {

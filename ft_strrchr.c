@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:57 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/25 15:17:10 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:40:46 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char    *ft_strrchr(const char *str, int c)        //locates the last occurence of a char in the string pointed to by s, either returns a pointer to the located character or Null
 {

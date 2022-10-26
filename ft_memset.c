@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:32 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/25 16:22:28 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:39:34 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memset(void *b, int c, size_t n)
 {

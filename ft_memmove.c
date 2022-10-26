@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:29 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 18:35:55 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:39:19 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memmove(void *dest, const void *src, size_t n)
 {

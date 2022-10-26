@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:48 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 18:23:03 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:40:27 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int     ft_strncmp(const char *str1, const char *str2, int n)        //strncmp compares at most n characters between the two strings str1, str2
 {

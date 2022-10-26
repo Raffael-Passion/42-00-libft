@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 15:51:26 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 16:57:18 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:38:29 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int     ft_isascii (int i)
 {

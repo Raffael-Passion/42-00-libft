@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:49:51 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/25 16:33:15 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:37:47 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    ft_bzero(void *s, size_t n)
 {

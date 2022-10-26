@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 23:09:13 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 18:23:03 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:40:08 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int    ft_strlcpy(char *dest, char *src, unsigned int *size)
 {

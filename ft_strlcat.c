@@ -6,9 +6,11 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:52:03 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 18:23:12 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:39:59 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int     ft_strlcat(char *dst, const char *src, size_t n)     //size bounded string concatenation (src to end of dst)
 {
