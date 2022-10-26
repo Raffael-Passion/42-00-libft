@@ -6,13 +6,13 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:04:12 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 17:30:16 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:57:18 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int     ft_isdigit (int i)
 {
     if i >= 48 && i <= 57
-        return 1;
+        return (1);
     return 0;
 }

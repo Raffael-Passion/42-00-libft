@@ -6,13 +6,13 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 15:51:26 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 17:30:16 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:57:18 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int     ft_isascii (int i)
 {
     if i >= 0 && i <= 127
-        return 1;
+        return (1);
     return 0;
 }

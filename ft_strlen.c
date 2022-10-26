@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:01:56 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/25 15:14:25 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:57:18 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ int     ft_strlen(char *str)
     while (str[i] != '\0')
         i++;
 
-    return i;
+    return (i);
 }

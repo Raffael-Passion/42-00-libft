@@ -6,7 +6,13 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:08 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/24 14:51:43 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:52:43 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int     ft_isalpha(int i)
+{
+    if ((i >= 65 && i <= 90) || (i >= 97 && i <= 122))
+        return (1);
+    return (0);
+}
