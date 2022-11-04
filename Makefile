@@ -6,7 +6,7 @@
 #    By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 19:55:23 by rhortens          #+#    #+#              #
-#    Updated: 2022/10/26 20:09:16 by rhortens         ###   ########.fr        #
+#    Updated: 2022/11/04 15:26:37 by rhortens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,39 @@ FILES	=	ft_atoi.c \
 			ft_strrchr.c \
 			ft_tolower.c \
 			ft_toupper.c \
+			ft_substr.c \
+			ft_strjoin.c \
+			ft_strtrim.c \
+			ft_split.c \
+			ft_itoa.c \
+			ft_strmapi.c \
+			ft_striteri.c \
+			ft_putchar_fd.c \
+			ft_putstr_fd.c \
+			ft_putendl_fd.c \
+			ft_putnbr_fd.c \
 
+COMPILER	= gcc
+
+CFILES	= $(files:%=%.c)
+
+OFILES	= $(files:%=%.o)
+
+$(NAME):
+	$(COMPILER) $(CFLAGS) -c $(CFILES) -I./
+	ar -rc $(OFILES)
+
+all: $(NAME)
+
+clean:
+	rm -f $(NAME)
+	rm -f $(OFILES)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all, clean, fclean, re
 
 			
