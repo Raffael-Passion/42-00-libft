@@ -6,7 +6,7 @@
 #    By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 19:55:23 by rhortens          #+#    #+#              #
-#    Updated: 2022/11/04 15:26:37 by rhortens         ###   ########.fr        #
+#    Updated: 2022/11/04 20:13:49 by rhortens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,27 +48,32 @@ FILES	=	ft_atoi.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 
-COMPILER	= gcc
+COMP	= gcc
 
-CFILES	= $(files:%=%.c)
+LIBFT	= libft.h
 
-OFILES	= $(files:%=%.o)
+OBJS	= $(FILES:.c=.o)
 
-$(NAME):
-	$(COMPILER) $(CFLAGS) -c $(CFILES) -I./
-	ar -rc $(OFILES)
+RM		= rm -f
 
 all: $(NAME)
 
+.c.o:
+		$(COMP) $(CFLAGS) -c -I $(LIBFT) $< -o ${<:.c=.o}
+
+$(NAME) : $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+	ranlib $(NAME)
+
 clean:
-	rm -f $(NAME)
-	rm -f $(OFILES)
+		$(RM) $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+		$(RM) $(NAME)
 
-re: fclean all
+re: fclean
+		$(MAKE) all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re
 
 			

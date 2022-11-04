@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:32 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:39:34 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:39:21 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void    *ft_memset(void *b, int c, size_t n)
     p = (char *)b;
     while (n > 0)
     {
-        p[n - 1] == c;
+        p[n - 1] = c;
         n--;
     }
     return (b);

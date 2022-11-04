@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:24:25 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/04 14:05:12 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 21:05:55 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char    *ft_itoa(int n)
     unsigned int    number;
     unsigned int    length;
 
+    number = n;
     length = ft_size(n);
     str = (char *)malloc(sizeof(char) * (length + 1));
     if (str == NULL)
@@ -51,7 +52,7 @@ char    *ft_itoa(int n)
     str[length] = '\0';
     while (number != 0)
     {
-        str[len - 1] = (number % 10) + '0';
+        str[length - 1] = (number % 10) + '0';
         number = number / 10;
         length--;
     }

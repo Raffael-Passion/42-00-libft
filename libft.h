@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:46:32 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:37:47 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 21:01:32 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,23 @@ void    *ft_memset(void *b, int c, size_t n);
 char    *ft_strchr(const char *str, int c);
 char    *ft_strdup(const char *s);
 int     ft_strlcat(char *dst, const char *src, size_t n);
-unsigned int    ft_strlcpy(char *dest, char *src, unsigned int *size);
-int     ft_strlen(char *str);
+unsigned int    ft_strlcpy(char *dest, const char *src, unsigned int size);
+unsigned int     ft_strlen(const char *str);
 int     ft_strncmp(const char *str1, const char *str2, int n);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t n);
 char    *ft_strrchr(const char *str, int c);
 int     ft_tolower(int i);
 int     ft_toupper(int i);
+char    *ft_substr(char const *s, unsigned int start, size_t len);
+char    *ft_strjoin(const char *s1, const char *s2);
+char    *ft_strtrim(const char *s1, const char *set);
+char    **ft_split(const char *s, char c);
+char    *ft_itoa(int n);
+char    *ft_strmapi(const char *s, char (*f)(unsigned int, char));
+void    ft_striteri(char *s, void (*f)(unsigned int, char*));
+void    ft_putchar_fd(char c, int fd);
+void    ft_putstr_fd(char *s, int fd);
+void    ft_putendl_fd(char *s, int fd);
+void    ft_putnbr_fd(int n, int fd);
 
 #endif

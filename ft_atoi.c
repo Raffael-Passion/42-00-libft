@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:49:47 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:37:39 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:19:33 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int     ft_atoi(const char *str)            //atoi shall convert ascii string to
     i = 0;
     n = 1;
     res = 0;
-    while (str[i] == 32 || str[i] >= 9 && str[i] <= 13)         //check if i is a space or tab
+    while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))         //check if i is a space or tab
         i++;                                                    //if not, increment
     if (str[i] == '-' || str[i] == '+')                         //check if i is a minus or plus
     {

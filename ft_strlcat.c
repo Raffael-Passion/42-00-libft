@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:52:03 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:39:59 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:46:04 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ int     ft_strlcat(char *dst, const char *src, size_t n)     //size bounded stri
 
     i = 0;
     j = 0;
-    while (dst[i] && i < size)
+    while (dst[i] && i < n)
         i++;
-    while (src[j] && (i + j + 1) < size)
+    while (src[j] && (i + j + 1) < n)
     {
         dst[i + j] = src[j];
         j++;
     }
-    if (i < size)
-        dest[i+j] = '\0';
+    if (i < n)
+        dst[i+j] = '\0';
     return (i + ft_strlen(src));
 }

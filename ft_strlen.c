@@ -6,16 +6,18 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:01:56 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:40:17 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:52:40 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_strlen(char *str)
+unsigned int     ft_strlen(const char *str)
 {
-    int i = 0;
-    while (str[i] != '\0')
+    int i;
+    
+    i = 0;
+    while (*(str + i))
         i++;
 
     return (i);

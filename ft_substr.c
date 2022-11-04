@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:25:04 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/27 14:34:11 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:52:40 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
         substr[n] = s[start + n];
         n++;
     }
-    substr[n] == '\0';
+    substr[n] = '\0';
     return (substr);
 }

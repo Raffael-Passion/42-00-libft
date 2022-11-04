@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:50:23 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/27 23:14:16 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/04 21:02:52 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,16 @@ static int  wordscntr(const char *str, char c)
     int j;
 
     i = 0;
-    j = 0
+    j = 0;
     while (*str)
     {
         if (*str != c && j == 0)
         {
-            j == 1;
+            j = 1;
             i++;
         }
         else if (*str == c)
-            j == 0;
+            j = 0;
         str++;
     }
     return (i);
