@@ -6,7 +6,7 @@
 #    By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 19:55:23 by rhortens          #+#    #+#              #
-#    Updated: 2022/11/05 13:59:59 by rhortens         ###   ########.fr        #
+#    Updated: 2022/11/05 20:39:02 by rhortens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,4 +77,3 @@ re: fclean
 
 .PHONY: all clean fclean re
 
-			

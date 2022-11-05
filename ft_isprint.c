@@ -6,15 +6,15 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:06:24 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/04 21:12:09 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 20:43:36 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isprint (int i)
+int	ft_isprint(int i)
 {
-    if (i >= 32 && i <= 126)
-        return (1);
-    return 0;
+	if (i >= 32 && i <= 126)
+		return (1);
+	return (0);
 }

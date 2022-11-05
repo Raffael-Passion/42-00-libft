@@ -6,15 +6,15 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:51:01 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:40:55 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 20:37:26 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_tolower(int i)           //converts uppercase letter to lowercase letter
+int	ft_tolower(int i)
 {
-    if (i >= 'A' && i <= 'Z')
-        return (i + 32);
-    return (i);
+	if (i >= 'A' && i <= 'Z')
+		return (i + 32);
+	return (i);
 }

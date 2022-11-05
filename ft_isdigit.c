@@ -6,15 +6,15 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:04:12 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/04 20:20:23 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 20:43:20 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isdigit (int i)
+int	ft_isdigit(int i)
 {
-    if (i >= 48 && i <= 57)
-        return (1);
-    return 0;
+	if (i >= 48 && i <= 57)
+		return (1);
+	return (0);
 }

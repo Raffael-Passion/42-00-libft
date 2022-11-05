@@ -6,15 +6,15 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:08 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:38:12 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 20:16:56 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isalpha(int i)
+int	ft_isalpha(int i)
 {
-    if ((i >= 65 && i <= 90) || (i >= 97 && i <= 122))
-        return (1);
-    return (0);
+	if ((i >= 65 && i <= 90) || (i >= 97 && i <= 122))
+		return (1);
+	return (0);
 }

@@ -6,15 +6,15 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 15:51:26 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/04 20:20:10 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 20:43:04 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isascii (int i)
+int	ft_isascii(int i)
 {
-    if (i >= 0 && i <= 127)
-        return (1);
-    return 0;
+	if (i >= 0 && i <= 127)
+		return (1);
+	return (0);
 }
