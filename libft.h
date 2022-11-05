@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:46:32 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/04 21:01:32 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 14:05:32 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int     ft_isdigit (int i);
 int     ft_isprint (int i);
 void    *ft_memchr(const void *s, int c, size_t n);
 int     ft_memcmp(const void *s1, const void *s2, size_t n);
-void    *ft_memcpy(void *dest, void *src, size_t n);
+void    *ft_memcpy(void *dest, const void *src, size_t n);
 void    *ft_memmove(void *dest, const void *src, size_t n);
 void    *ft_memset(void *b, int c, size_t n);
 char    *ft_strchr(const char *str, int c);
@@ -34,7 +34,7 @@ char    *ft_strdup(const char *s);
 int     ft_strlcat(char *dst, const char *src, size_t n);
 unsigned int    ft_strlcpy(char *dest, const char *src, unsigned int size);
 unsigned int     ft_strlen(const char *str);
-int     ft_strncmp(const char *str1, const char *str2, int n);
+int     ft_strncmp(const char *str1, const char *str2, size_t n);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t n);
 char    *ft_strrchr(const char *str, int c);
 int     ft_tolower(int i);

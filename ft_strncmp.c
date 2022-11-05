@@ -6,21 +6,24 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:48 by rhortens          #+#    #+#             */
-/*   Updated: 2022/10/26 19:40:27 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:40:39 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_strncmp(const char *str1, const char *str2, int n)        //strncmp compares at most n characters between the two strings str1, str2
+int     ft_strncmp(const char *str1, const char *str2, size_t n)        //strncmp compares at most n characters between the two strings str1, str2
 {
-    while (*str1 != '\0' && *str1 == *str2 && n != 0)
+    size_t  i;
+    int     dif;
+
+    i = 0;
+    while (i < n && (*(str1 + i) || *(str2 + i)))
     {
-        str1++;
-        str2++;
-        n--;
+        dif = *((unsigned char *)str1 + i) - *((unsigned char *)str2 + i);
+        if (dif)
+            return (dif);
+        i++;
     }
-    if (n == 0)
-        return 0;
-    return (*str1 - *str2);                 //returns the ascii difference between *str1 and *str2 at the first difference of the pointers
+    return (0);
 }

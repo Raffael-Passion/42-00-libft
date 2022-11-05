@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:24:25 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/04 21:05:55 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:21:30 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ static unsigned int ft_size(int number)
     if (number == 0)
         return (1);
     if (number < 0)
-        length += 1;
+        length++;
     while (number != 0)
     {
-        number /= 10;
         length++;
+        number /= 10;
     }
     return (length);
 }
@@ -35,26 +35,25 @@ char    *ft_itoa(int n)
     unsigned int    number;
     unsigned int    length;
 
-    number = n;
+    if (n == -2147483648)
+        return (ft_strdup("-2147483648"));    
     length = ft_size(n);
+    number = length - 1;
     str = (char *)malloc(sizeof(char) * (length + 1));
     if (str == NULL)
         return NULL;
-    if (number < 0)
+    if (n < 0)
     {
         str[0] = '-';
-        number = -n;
+        n *= -1;
     }
-    else
-        number = n;
-    if (number == 0)
-        str[0] = '0';
-    str[length] = '\0';
-    while (number != 0)
+    while (n >= 10)
     {
-        str[length - 1] = (number % 10) + '0';
-        number = number / 10;
-        length--;
+        str[number] = (n % 10) + '0';
+        number--;
+        n /= 10;
     }
+    str[number] = (n % 10) + '0';
+    str[length] = '\0';
     return (str);
 }

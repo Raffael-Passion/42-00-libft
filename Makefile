@@ -6,7 +6,7 @@
 #    By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 19:55:23 by rhortens          #+#    #+#              #
-#    Updated: 2022/11/04 20:13:49 by rhortens         ###   ########.fr        #
+#    Updated: 2022/11/05 13:59:59 by rhortens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ FILES	=	ft_atoi.c \
 			ft_memcmp.c \
 			ft_memmove.c \
 			ft_memset.c \
+			ft_memcpy.c \
 			ft_strchr.c \
 			ft_strdup.c \
 			ft_strlcat.c \
