@@ -6,22 +6,49 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:06:19 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/05 22:31:43 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:25:33 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(const char *s1, const char *set)
+static int	if_set(char c, const char *set)
 {
 	size_t	i;
 
-	if (s1 == NULL || set == NULL)
+	i = 0;
+	while (set[i])
+	{
+		if (set[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+char	*ft_strtrim(const char *s1, const char *set)
+{
+	char	*new;
+	size_t	f;
+	size_t	l;
+	size_t	i;
+
+	f = 0;
+	l = ft_strlen(s1);
+	while (s1[f] && if_set(s1[f], set))
+		f++;
+	while (l > f && if_set(s1[l - 1], set))
+		l--;
+	new = malloc(sizeof(char) * (l - f + 1));
+	if (!new)
 		return (0);
-	while (*s1 && ft_strchr(set, *s1))
-		s1++;
-	i = ft_strlen(s1);
-	while (i && ft_strchr(set, *(s1 + i)))
-		i--;
-	return (ft_substr(s1, 0, i + 1));
+	i = 0;
+	while (f < l)
+	{
+		new[i] = s1[f];
+		i++;
+		f++;
+	}
+	new[i] = '\0';
+	return (new);
 }

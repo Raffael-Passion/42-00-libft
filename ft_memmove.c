@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:29 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/05 20:20:31 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:52:50 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
+	if (dest == NULL && src == NULL)
+		return (0);
 	if (dest > src)
 	{
 		i = n;
