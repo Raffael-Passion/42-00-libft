@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:25:04 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/07 17:25:33 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/08 15:05:19 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		substr = ft_strdup("");
 		return (substr);
 	}
+	if (ft_strlen(s + start) < len)
+		len = ft_strlen(s + start);
 	substr = malloc(sizeof(char) * len + 1);
 	if (!substr)
 		return (0);

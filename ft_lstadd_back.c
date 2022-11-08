@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 20:11:30 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/07 20:19:31 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/08 15:31:32 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (!tmp)
 		*lst = new;
 	else
-		temp->next = new;
+		tmp->next = new;
 }

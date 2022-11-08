@@ -6,7 +6,7 @@
 #    By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 19:55:23 by rhortens          #+#    #+#              #
-#    Updated: 2022/11/05 20:39:02 by rhortens         ###   ########.fr        #
+#    Updated: 2022/11/08 15:28:58 by rhortens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,11 +49,23 @@ FILES	=	ft_atoi.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 
+BONUS	=	ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c \
+			ft_lstlast.c \
+			ft_lstadd_back.c \
+			ft_lstdelone.c \
+			ft_lstclear.c \
+			ft_lstiter.c \
+			ft_lstmap.c \
+
 COMP	= gcc
 
 LIBFT	= libft.h
 
 OBJS	= $(FILES:.c=.o)
+
+OBJSBON	= $(BONUS:.c=.o)
 
 RM		= rm -f
 
@@ -63,11 +75,15 @@ all: $(NAME)
 		$(COMP) $(CFLAGS) -c -I $(LIBFT) $< -o ${<:.c=.o}
 
 $(NAME) : $(OBJS)
-	ar rcs $(NAME) $(OBJS)
-	ranlib $(NAME)
+		ar rcs $(NAME) $(OBJS)
+		ranlib $(NAME)
+
+bonus: $(OBJSBON)
+		ar rcs $(NAME) $(OBJSBON)
+		@ranlib $(NAME)
 
 clean:
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) $(OBJSBON)
 
 fclean: clean
 		$(RM) $(NAME)
@@ -75,5 +91,5 @@ fclean: clean
 re: fclean
 		$(MAKE) all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 
