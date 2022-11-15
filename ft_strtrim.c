@@ -6,15 +6,15 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:06:19 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/07 17:25:33 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/15 20:37:50 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	if_set(char c, const char *set)
+int	if_set(char c, const char *set)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (set[i])
