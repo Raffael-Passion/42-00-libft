@@ -6,11 +6,25 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:50:23 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/05 22:09:53 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/17 18:00:26 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	**mallocerror(char **tab)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+	return (0);
+}
 
 static int	wordscntr(const char *str, char c)
 {
@@ -33,19 +47,27 @@ static int	wordscntr(const char *str, char c)
 	return (i);
 }
 
-static char	*duplicate(const char *str, int start, int end)
+static char	*duplicate(const char *str, int *start, char c)
 {
 	char	*dup;
 	int		i;
+	size_t	len;
 
-	i = 0;
-	dup = malloc(sizeof(char) * (end - start + 1));
-	while (start < end)
+	len = 0;
+	while (str[*start] == c)
+		(*start)++;
+	i = *start;
+	while (str[i] && str[i] != c)
 	{
-		dup[i] = str[start];
+		len++;
 		i++;
-		start++;
 	}
+	dup = malloc(sizeof(char) * (len + 1));
+	if (!dup)
+		return (0);
+	i = 0;
+	while (str[*start] && str[*start] != c)
+		dup[i++] = str[(*start)++];
 	dup[i] = '\0';
 	return (dup);
 }
@@ -53,27 +75,23 @@ static char	*duplicate(const char *str, int start, int end)
 char	**ft_split(const char *s, char c)
 {
 	int		index;
-	size_t	i;
-	size_t	j;
+	int		i;
 	char	**split;
 
+	if (!s)
+		return (NULL);
 	split = malloc(sizeof(char *) * (wordscntr(s, c) + 1));
-	if (!s || (!(split)))
-		return (0);
+	if (!split)
+		return (NULL);
 	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
+	index = 0;
+	while (i < wordscntr(s, c))
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
-		{
-			split[j++] = duplicate(s, index, i);
-			index = -1;
-		}
+		split[i] = duplicate(s, &index, c);
+		if (!split[i])
+			return (mallocerror(split));
 		i++;
 	}
-	split[j] = 0;
+	split[i] = 0;
 	return (split);
 }
