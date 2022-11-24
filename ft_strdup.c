@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:50:40 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/08 15:47:36 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/24 14:05:50 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strdup(const char *s)
 
 	i = 0;
 	j = ft_strlen(s);
+	if (!s)
+		return (NULL);
 	str = (char *)malloc(sizeof(*str) * (j + 1));
 	if (!str)
 		return (0);

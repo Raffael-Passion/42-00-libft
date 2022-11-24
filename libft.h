@@ -6,7 +6,7 @@
 /*   By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:46:32 by rhortens          #+#    #+#             */
-/*   Updated: 2022/11/08 15:33:43 by rhortens         ###   ########.fr       */
+/*   Updated: 2022/11/24 14:02:50 by rhortens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char			*ft_strchr(const char *str, int c);
 char			*ft_strdup(const char *s);
 int				ft_strlcat(char *dst, const char *src, size_t n);
 unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size);
-unsigned int	ft_strlen(const char *str);
+size_t			ft_strlen(const char *str);
 int				ft_strncmp(const char *str1, const char *str2, size_t n);
 char			*ft_strnstr(const char *haystack, const char *needle, size_t n);
 char			*ft_strrchr(const char *str, int c);
