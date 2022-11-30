@@ -6,7 +6,7 @@
 #    By: rhortens <rhortens@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 19:55:23 by rhortens          #+#    #+#              #
-#    Updated: 2022/11/08 15:28:58 by rhortens         ###   ########.fr        #
+#    Updated: 2022/11/30 20:00:18 by rhortens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ BONUS	=	ft_lstnew.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
 
-COMP	= gcc
+COMP	= cc
 
 LIBFT	= libft.h
 
